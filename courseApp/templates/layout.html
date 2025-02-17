@@ -1,11 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course App | {% block page_title %}{% endblock page_title %}</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="{% static "css\bootstrap.min.css" %}" />
+    <link rel="stylesheet" href="{% static "css\all.min.css" %}"/>
+    {% block css_files %}{% endblock css_files %}
 </head>
 <body>
     {% comment %}---Navbar---{% endcomment %}
@@ -17,6 +19,7 @@
    
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <script src="{% static "js\bootstrap.min.js" %}"></script>
+    {% block js_files %}{% endblock js_files %}
 </body>
 </html>
