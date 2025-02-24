@@ -68,7 +68,7 @@ def details(request, kursId):
         course = Course.objects.get(pk=kursId)
         categories = Categories.objects.all()
     except:
-        return Http404()
+        return render(request, "courses/404.html")
     context = {
         "course" : course,
         "categories" : categories
