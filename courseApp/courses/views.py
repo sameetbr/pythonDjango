@@ -66,10 +66,12 @@ def index(request):
 def details(request, kursId):
     try:
         course = Course.objects.get(pk=kursId)
+        categories = Categories.objects.all()
     except:
         return Http404()
     context = {
-        "course" : course
+        "course" : course,
+        "categories" : categories
     }
     
     return render(request, "courses/details.html", context)

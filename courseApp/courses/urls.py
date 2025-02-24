@@ -9,7 +9,7 @@ from . import views
 
 urlpatterns = [
     path("", views.index),
-    path("<kursId>", views.details),
+    path("<kursId>", views.details, name="course_details"),
     path("category/<int:categoryID>", views.getCoursesByCategoryID),
     path("category/<str:categoryName>", views.getCoursesByCategory, name="courses_by_category")
 ]
