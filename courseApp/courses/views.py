@@ -2,6 +2,7 @@ from datetime import date
 from django.http import HttpResponse, HttpResponseRedirect, HttpResponseNotFound
 from django.shortcuts import render, redirect
 from django.urls import reverse
+from courses.models import Course
 
 data = {
     "programlama":"Programlama kategorisine ait kurslar",
@@ -49,7 +50,7 @@ db = {
 #http://127.0.0.1:8000/kurs/ 
 
 def index(request):
-    kurslar = [course for course in db["courses"] if course["isActive"] == 1 ]
+    kurslar = Course.objects.all(isActive=1)
     kategoriler = db["categories"]
 
     # for kurs in db["courses"]:
