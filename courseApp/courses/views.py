@@ -63,9 +63,9 @@ def index(request):
     })
 
 
-def details(request, kursId):
+def details(request, slug):
     try:
-        course = Course.objects.get(pk=kursId)
+        course = Course.objects.get(slug=slug)
         categories = Categories.objects.all()
     except:
         return render(request, "courses/404.html")

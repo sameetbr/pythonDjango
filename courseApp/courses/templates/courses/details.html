@@ -17,10 +17,10 @@
         <div class="col-3">
             {% include "courses/partials/_category.html" %}
         </div>
-        <div class="col-3">
+        <div class="col-4">
             <img class="img-fluid rounded-start" src="{% static 'courses/img/' %}{{ course.imageUrl }}" alt="{{ course.title }}">
         </div>
-        <div class="col-6">
+        <div class="col-5">
             <h1 class="h3"> {{ course.title }} </h1>
             <p> {{course.description }} </p>
         </div>
