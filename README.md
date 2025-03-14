@@ -1,78 +1,65 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #1e1e1e;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
-        }
-        .logo {
-            width: 100px;
-        }
-        h1 {
-            font-size: 36px;
-            color: #4da8da;
-        }
-        h2 {
-            font-size: 24px;
-            margin-top: 20px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-        a {
-            color: #4da8da;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-            background: rgba(77, 168, 218, 0.2);
-            padding: 8px 12px;
-            border-radius: 5px;
-        }
-        a:hover {
-            background: rgba(77, 168, 218, 0.4);
-        }
-    </style>
-</head>
-<body>
+# Django Projesi README
 
-    <div class="container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg" alt="Django Logo" class="logo">
-        <h1>Django</h1>
-        
-        <p>
-            Django, hızlı geliştirme ve temiz, pragmatik tasarım için oluşturulmuş bir web çerçevesidir. 
-            Geliştiricilerin hızlı ve güvenli web uygulamaları oluşturmasına yardımcı olur.
-        </p>
+```markdown
+<p align="center">
+<a href="https://www.djangoproject.com/" target="_blank">
+<img src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" width="400" alt="Django Logo">
+</a>
+</p>
 
-        <h2>Özellikler</h2>
-        <ul>
-            <li><a href="#">Güçlü URL Yönlendirme</a></li>
-            <li><a href="#">Yerleşik Admin Paneli</a></li>
-            <li><a href="#">Güvenlik Mekanizmaları</a></li>
-            <li><a href="#">ORM ile Veri Tabanı Yönetimi</a></li>
-            <li><a href="#">Cache Desteği</a></li>
-            <li><a href="#">Gerçek Zamanlı İşlem Desteği</a></li>
-        </ul>
-    </div>
+<p align="center">
+<a href="https://github.com/django/django/actions"><img src="https://github.com/django/django/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://pypi.org/project/Django/"><img src="https://img.shields.io/pypi/dm/Django" alt="Total Downloads"></a>
+<a href="https://pypi.org/project/Django/"><img src="https://img.shields.io/pypi/v/Django" alt="Latest Stable Version"></a>
+<a href="https://github.com/django/django/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BSD-blue.svg" alt="License"></a>
+</p>
 
-</body>
-</html>
+## Django Hakkında
+
+Django, hızlı geliştirme ve temiz, pragmatik tasarım için oluşturulmuş üst düzey bir Python web çerçevesidir. Django, güvenliği ve ölçeklenebilirliği ön planda tutarak geliştiricilere verimli bir geliştirme deneyimi sunar. İşte bazı temel özellikleri:
+
+- [Güçlü URL yönlendirme sistemi](https://docs.djangoproject.com/en/stable/topics/http/urls/).
+- [Esnek ve güçlü ORM](https://docs.djangoproject.com/en/stable/topics/db/models/).
+- [Yerleşik yönetici paneli](https://docs.djangoproject.com/en/stable/ref/contrib/admin/).
+- [Gelişmiş form işleme ve doğrulama](https://docs.djangoproject.com/en/stable/topics/forms/).
+- [Güçlü kimlik doğrulama ve yetkilendirme](https://docs.djangoproject.com/en/stable/topics/auth/).
+- [Gelişmiş önbellekleme mekanizmaları](https://docs.djangoproject.com/en/stable/topics/cache/).
+- [Yerleşik test çerçevesi](https://docs.djangoproject.com/en/stable/topics/testing/).
+
+Django, temiz bir yapı sunarak büyük ve karmaşık projeleri yönetmeyi kolaylaştırır.
+
+## Django Öğrenme
+
+Django öğrenmek için en iyi kaynaklardan bazıları şunlardır:
+
+- Resmi [Django belgeleri](https://docs.djangoproject.com/en/stable/).
+- [Django Öğreticisi](https://docs.djangoproject.com/en/stable/intro/tutorial01/) ile sıfırdan proje geliştirme.
+- [Django Girls Tutorial](https://tutorial.djangogirls.org/en/) gibi topluluk destekli kaynaklar.
+- [DjangoCon](https://www.djangoproject.com/community/) ve diğer etkinlikler.
+- [Django REST Framework](https://www.django-rest-framework.org/) ile API geliştirme.
+
+## Django Sponsorları
+
+Django açık kaynaklı bir projedir ve çeşitli sponsorlar tarafından desteklenmektedir. Sponsor olmak isterseniz [Django Software Foundation](https://www.djangoproject.com/foundation/) sayfasını ziyaret edebilirsiniz.
+
+### Öne Çıkan Sponsorlar
+
+- **[JetBrains](https://www.jetbrains.com/)**
+- **[Lincoln Loop](https://lincolnloop.com/)**
+- **[Sentry](https://sentry.io/welcome/)**
+- **[Elastic](https://www.elastic.co/)**
+- **[Heroku](https://www.heroku.com/)**
+
+## Katkıda Bulunma
+
+Django'ya katkıda bulunmak için [katkı kılavuzunu](https://docs.djangoproject.com/en/stable/internals/contributing/) inceleyebilirsiniz. Pull request göndermeden önce topluluk yönergelerine uyduğunuzdan emin olun.
+
+## Güvenlik Açıkları
+
+Eğer Django'da bir güvenlik açığı keşfederseniz, bunu gizli olarak [security@djangoproject.com](mailto:security@djangoproject.com) adresine bildirebilirsiniz. Güvenlik sorunları hızla ele alınacaktır.
+
+## Lisans
+
+Django, [BSD Lisansı](https://github.com/django/django/blob/main/LICENSE) altında yayınlanmıştır.
+```
+
