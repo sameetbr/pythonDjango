@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,16 +18,37 @@
             background: #1e1e1e;
             padding: 20px;
             border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
         }
         .logo {
             width: 100px;
         }
+        h1 {
+            font-size: 36px;
+            color: #4da8da;
+        }
+        h2 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
         a {
             color: #4da8da;
             text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            background: rgba(77, 168, 218, 0.2);
+            padding: 8px 12px;
+            border-radius: 5px;
         }
         a:hover {
-            text-decoration: underline;
+            background: rgba(77, 168, 218, 0.4);
         }
     </style>
 </head>
@@ -43,7 +64,7 @@
         </p>
 
         <h2>Özellikler</h2>
-        <ul style="text-align: left;">
+        <ul>
             <li><a href="#">Güçlü URL Yönlendirme</a></li>
             <li><a href="#">Yerleşik Admin Paneli</a></li>
             <li><a href="#">Güvenlik Mekanizmaları</a></li>
